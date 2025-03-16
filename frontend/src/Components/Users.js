@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Nav from './Nav'
 import axios from 'axios';
 import User from './User';

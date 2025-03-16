@@ -3,8 +3,13 @@ import './App.css';
 import Home from './Components/Home';
 import AddUser from './Components/AddUser';
 import Users from './Components/Users'
-import { Route, Routes } from 'react-router-dom';
 import UpdateUser from './Components/UpdateUser';
+import ContactUs from './Components/ContactUs';
+import { Route, Routes } from 'react-router-dom';
+import SendPdf from './Components/SendPdf';
+import ImageUploder from './Components/Images';
+
+
 
 function App() {
   
@@ -17,6 +22,10 @@ function App() {
           <Route path="/adduser" element={<AddUser/>} />
           <Route path="/userdetails" element={<Users/>} />
           <Route path="/userdetails/:id" element={<UpdateUser/>} />
+          <Route path="/sendpdf" element={<SendPdf/>} />
+          <Route path="/imgpart" element={<ImageUploder/>} />
+          <Route path="/contactus" element={<ContactUs/>} />
+
         </Routes>
       </React.Fragment>
     </div>

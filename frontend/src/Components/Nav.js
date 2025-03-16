@@ -18,7 +18,22 @@ function Nav() {
         </li>
         <li className="home-ul">
           <Link to="/userdetails" className="active home-a">
-            <h1>user details</h1>
+            <h1>User details</h1>
+          </Link>
+        </li>
+        <li className="home-ul">
+          <Link to="/sendpdf" className="active home-a">
+            <h1>Send Pdf</h1>
+          </Link>
+        </li>
+        <li className="home-ul">
+          <Link to="/imgpart" className="active home-a">
+            <h1>Photos</h1>
+          </Link>
+        </li>
+        <li className="home-ul">
+          <Link to="/contactus" className="active home-a">
+            <h1>Contact us</h1>
           </Link>
         </li>
       </ul>

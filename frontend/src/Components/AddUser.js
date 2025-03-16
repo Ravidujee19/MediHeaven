@@ -44,15 +44,15 @@ function AddUser() {
       <Nav/>
       <h1>Add Users</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <input type="text" name="name" placeholder="Name" value={inputs.name} onChange={handleChange} className="w-full p-2 border rounded-md" />
-        <input type="email" name="gmail" placeholder="Gmail" value={inputs.gmail} onChange={handleChange} className="w-full p-2 border rounded-md" />
-        <input type="number" name="age" placeholder="Age" value={inputs.age} onChange={handleChange} className="w-full p-2 border rounded-md" min="1" max="100" />
-        <input type="text" name="address" placeholder="Address" value={inputs.address} onChange={handleChange} className="w-full p-2 border rounded-md" />
+        <input type="text" name="name" placeholder="Name" value={inputs.name} onChange={handleChange} className="w-full p-2 border rounded-md" /><br></br><br></br>
+        <input type="email" name="gmail" placeholder="Gmail" value={inputs.gmail} onChange={handleChange} className="w-full p-2 border rounded-md" /><br></br><br></br>
+        <input type="number" name="age" placeholder="Age" value={inputs.age} onChange={handleChange} className="w-full p-2 border rounded-md" min="1" max="100" /><br></br><br></br>
+        <input type="text" name="address" placeholder="Address" value={inputs.address} onChange={handleChange} className="w-full p-2 border rounded-md" /><br></br><br></br>
         <select name="gender" value={inputs.gender} onChange={handleChange} className="w-full p-2 border rounded-md">
           <option value="">Select Gender</option>
           <option value="male">Male</option>
           <option value="female">Female</option>
-        </select>
+        </select><br></br><br></br>
         <button type="submit" className="w-full bg-green-600 text-white p-2 rounded-md hover:bg-green-700">Submit</button>
       </form>
     </div>
