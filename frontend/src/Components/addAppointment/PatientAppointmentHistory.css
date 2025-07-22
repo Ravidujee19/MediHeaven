@@ -1,0 +1,105 @@
+/* Container styling */
+.appointment-history-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necessary for overlay positioning */
+  }
+  
+  /* Background image with blur */
+  .appointment-history-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Ensure background stays behind the content */
+  }
+  
+  /* Title */
+  .appointment-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  /* Table styling */
+  .appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #333;
+    table-layout: fixed;
+  }
+  
+  .appointment-table th,
+  .appointment-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  .appointment-table th {
+    background-color: #1fd690;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Adjust individual column widths */
+  .appointment-table th:nth-child(1),
+  .appointment-table td:nth-child(1) {
+    width: 15%;
+  }
+  
+  .appointment-table th:nth-child(2),
+  .appointment-table td:nth-child(2) {
+    width: 25%;
+  }
+  
+  .appointment-table th:nth-child(3),
+  .appointment-table td:nth-child(3) {
+    width: 25%;
+  }
+  
+  .appointment-table th:nth-child(4),
+  .appointment-table td:nth-child(4) {
+    width: 20%;
+  }
+  
+  .appointment-table th:nth-child(5),
+  .appointment-table td:nth-child(5) {
+    width: 15%;
+  }
+  
+  /* Status colors */
+  .status-pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .status-accepted {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status-rejected {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Loading message */
+  .loading-message {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+  }
+  

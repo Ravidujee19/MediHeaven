@@ -1,0 +1,126 @@
+/* General container styles */
+.back4m {
+    background-color: #f4fdf4; /* Light green background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Animation for smooth fade-in */
+  }
+  
+  .title-appointment {
+    font-size: 36px;
+    color: #2e8b57; /* Dark Green */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  /* Animation for sliding the title */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Styling for the form container */
+  .add-appointment-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Form input fields */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #2e8b57; /* Green border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effects for inputs */
+  input:hover, textarea:hover {
+    border-color: #388e3c; /* Darker Green on hover */
+    box-shadow: 0px 0px 8px rgba(56, 142, 60, 0.5);
+  }
+  
+  /* Submit button styling */
+  button.submit {
+    background-color: #388e3c; /* Dark Green */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite; /* Button animation */
+  }
+  
+  button.submit:hover {
+    background-color: #2e7d32; /* Even darker green on hover */
+  }
+  
+  /* Button animation for a smooth pulse effect */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive input field label styles */
+  label {
+    font-size: 18px;
+    color: #2e8b57; /* Green color */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Animation for input fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Loading Animation - to be used in some parts of the UI */
+  .loading-text {
+    font-size: 20px;
+    color: #388e3c;
+    animation: loadingPulse 2s infinite;
+  }
+  
+  @keyframes loadingPulse {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+  

@@ -1,0 +1,33 @@
+.chart-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .chart-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  .image-box {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #064e3b; /* Dark green background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rounded-image {
+    width: 420px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;
+  }
+  
+  

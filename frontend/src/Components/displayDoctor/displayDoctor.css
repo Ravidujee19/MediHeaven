@@ -1,0 +1,109 @@
+.light-green-bg {
+  background-color: #e8f5e9; /* Light green shade */
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* Container Styling */
+.container-for-admin-doctors {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #e8f5e9; /* light green */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e7d32;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Title Styling */
+  .title-for-admin {
+    text-align: center;
+    color: #1b5e20;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #66bb6a;
+    padding-bottom: 10px;
+    animation: slideDown 0.6s ease-in-out;
+  }
+  
+  /* Doctor Details */
+  .details-for-admin p {
+    font-size: 16px;
+    margin: 10px 0;
+    opacity: 0;
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+  
+  .details-for-admin p:nth-child(1) { animation-delay: 0.2s; }
+  .details-for-admin p:nth-child(2) { animation-delay: 0.4s; }
+  .details-for-admin p:nth-child(3) { animation-delay: 0.6s; }
+  .details-for-admin p:nth-child(4) { animation-delay: 0.8s; }
+  .details-for-admin p:nth-child(5) { animation-delay: 1s; }
+  .details-for-admin p:nth-child(6) { animation-delay: 1.2s; }
+  .details-for-admin p:nth-child(7) { animation-delay: 1.4s; }
+  
+  .details-for-admin strong {
+    color: #1b5e20;
+  }
+  
+  /* Buttons */
+  .buttonContainer-for-admin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Update Button */
+  .updateButton-for-admin {
+    background-color: #43a047;
+    color: white;
+  }
+  
+  .updateButton-for-admin:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Delete Button */
+  .deleteButton-for-admin {
+    background-color: #e53935;
+    color: white;
+  }
+  
+  .deleteButton-for-admin:hover {
+    background-color: #c62828;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

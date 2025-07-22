@@ -1,0 +1,20 @@
+.plain-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000; /* Use white (#fff) if your image is dark */
+  z-index: 10;
+  width: 100%;
+  font-weight: bold;
+}
+
+.plain-center-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plain-center-text p {
+  font-size: 1.2rem;
+}

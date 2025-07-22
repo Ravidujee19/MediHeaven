@@ -1,0 +1,108 @@
+/* add.css */
+
+/* Background for Admin View */
+.background-for-admin {
+  background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9);
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Container */
+.doctor-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f1f8e9;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(56, 142, 60, 0.2);
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Title */
+.doctor-form-title {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Form Layout */
+.doctor-form-elements {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.doctor-form-group {
+  margin-bottom: 1.2rem;
+}
+
+.doctor-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* Input & Textarea Styling */
+.doctor-form-group input,
+.doctor-form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #a5d6a7;
+  border-radius: 10px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.doctor-form-group input:focus,
+.doctor-form-group textarea:focus {
+  background-color: #ffffff;
+  border-color: #388e3c;
+  outline: none;
+  box-shadow: 0 0 6px rgba(56, 142, 60, 0.4);
+}
+
+/* Submit Button Styling */
+.doctor-form-submit {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.doctor-form-submit button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 0.9rem 2.2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.doctor-form-submit button:hover {
+  background-color: #2e7d32;
+  transform: scale(1.06);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

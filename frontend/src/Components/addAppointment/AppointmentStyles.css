@@ -1,0 +1,87 @@
+.appointment-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(240, 255, 240, 0.8);
+  border-radius: 15px;
+  overflow-x: auto;
+
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+.pending-row {
+  background-color: #fff5cc; /* Light yellow highlight */
+}
+
+.status-select-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pending-indicator {
+  margin-left: 8px;
+  font-size: 18px;
+  color: #f39c12; /* Orange color */
+}
+
+
+.appointment-header {
+  color: #2c6e49;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.loading-text {
+  color: #4caf50;
+  font-size: 18px;
+}
+
+.appointment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  table-layout: auto;
+}
+
+.appointment-table th, 
+.appointment-table td {
+  padding: 12px;
+  border-bottom: 1px solid #4caf50;
+  text-align: center;
+ 
+  max-width: 150px; /* Optional: Prevents stretching too far */
+}
+
+.status-dropdown {
+  padding: 6px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  background-color: white;
+  color: #2c6e49;
+}
+
+.reason-input {
+  padding: 5px;
+  border: 1px solid #388e3c;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.no-reason-text {
+  color: #757575;
+  font-style: italic;
+}
+
+.update-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #388e3c;
+}

@@ -1,0 +1,254 @@
+.background {
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+ 
+  
+}
+
+/* doctorsDetails.css */
+.body {
+    font-family: Arial, sans-serif;
+    
+   
+    backdrop-filter: blur(8px);
+    margin: 0;
+    padding: 0;
+  }
+
+  .doctor-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    flex-wrap: wrap; /* Wrap items if they exceed the screen width */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Align items to the center */
+  }
+  
+
+
+
+
+
+
+/* Style the search bar */
+.serach-area {
+  width: 300px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+  
+  h1 {
+    color: #2c6e49;
+  }
+  
+   .send-whatsapp-button {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    margin: 15px auto;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .search-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  /* Style the input field */
+  .search-area {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #4CAF50;
+    margin-bottom: 15px; /* space between input and button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-area:focus {
+    border-color: #008CBA;
+    box-shadow: 0 0 12px rgba(0, 140, 186, 0.4);
+  }
+  
+  /* Style the search button */
+  .search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+
+/* Style for no results message */
+.no-results-message {
+  text-align: center;
+  font-size: 18px;
+  color: #f44336;
+}
+  
+
+  
+  button {
+    background-color: #4caf50;
+    color: rgb(45, 130, 81);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  .doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    border: 2px solid #007bff; /* Border color */
+    padding: 15px;
+    border-radius: 15px; /* Rounded corners */
+    width: 220px; /* Adjust width */
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #000000; /* Green border */
+    object-fit: cover;
+  }
+  
+  .doctor-info {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .doctor-info h3 {
+    margin: 0;
+    color: #2c6e49;
+  }
+  
+  .doctor-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .no-results {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+  }
+
+  .doctor-dashboard-container {
+    max-width: 500px; /* Adjust width */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px; /* Rounded edges */
+    background-color: #f9f9f9;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    border: 2px solid #094b1c; /* Blue border */
+  }
+  
+  .doctor-title {
+    color: #094b1c;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .doctor-details p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+  }
+  
+  .doctor-details strong {
+    color: #094b1c;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .book-appointment-button {
+    background-color: #046941;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .book-appointment-button:hover {
+    background-color: #046941;
+  }
+  
+  .book-appointment-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .doctor-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+
+
+  
