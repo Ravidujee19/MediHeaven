@@ -84,8 +84,12 @@ npm install
 Create a `.env` file inside the `/backend` directory and add the following:
 
 ```env
-MONGO_URI=your_mongodb_atlas_connection_string
+MONGO_URI=mongodb+srv://username:password@cluster0.mongodb.net/database_name?retryWrites=true&w=majority&appName=app_name
+JWT_SECRET=dummy_jwt_secret_key_1234567890abcdef
 PORT=5000
+
+EMAIL_USER=example@example.com
+EMAIL_PASS=dummy_email_password_1234
 ```
 
 ### 4. Run the Application
