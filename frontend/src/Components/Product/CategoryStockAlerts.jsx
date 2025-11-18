@@ -41,6 +41,7 @@ const CategoryStockAlerts = () => {
         return null;
     }
   };
+  
 
   return (
     <div className="mb-4">
