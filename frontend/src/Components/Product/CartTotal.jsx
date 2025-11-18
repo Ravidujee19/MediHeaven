@@ -29,6 +29,7 @@ function CartTotal() {
         Proceed to Checkout
       </button> */}
     </div>
+    
   );
 }
 

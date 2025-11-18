@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 
 function Cart() {
   // const { products, currency, cartItems, updateQuantity, handleCheckout } = useContext(ShopContext);
-  const navigate = useNavigate(); // rj
+  const navigate = useNavigate();
   const {
     products,
     currency,
@@ -48,32 +48,6 @@ function Cart() {
       return;
     }
 
-    // Swal.fire({
-    //   title: "Processing Payment...",
-    //   timer: 1500,
-    //   timerProgressBar: true,
-    //   didOpen: () => {
-    //     Swal.showLoading();
-    //   },
-    //   willClose: () => {
-    //     // ✅ Save shipping and cart before clearing
-    //     const currentCart = JSON.parse(localStorage.getItem("cartItems")) || {};
-    //     localStorage.setItem("shipping_address", shippingInfo.address);
-    //     localStorage.setItem("shipping_phone", shippingInfo.phone);
-    //     localStorage.setItem("cart_temp", JSON.stringify(currentCart));
-
-    //     clearCart();
-
-    //     // ✅ Success popup with link
-    //     Swal.fire({
-    //       icon: "success",
-    //       title: "Payment Successful!",
-    //       html: `<p>Your order has been placed.</p><a href="/card" class="btn btn-success mt-3">Continue Shopping</a>`,
-    //       showConfirmButton: false,
-    //     });
-    //   },
-    // });
-
     Swal.fire({
       title: "Processing Payment...",
       timer: 1500,
@@ -89,7 +63,7 @@ function Cart() {
     
         clearCart();
     
-        // ✅ Show success alert without a link
+        // Show success alert
         Swal.fire({
           icon: "success",
           title: "Payment Successful!",
@@ -97,7 +71,7 @@ function Cart() {
           showConfirmButton: false,
           timer: 2000,
           willClose: () => {
-            navigate("/card"); // ✅ Redirect using React Router
+            navigate("/card"); // Redirect using React Router
           },
         });
       },
@@ -211,21 +185,6 @@ function Cart() {
                       })
                     }
                   /> 
-//                   <input
-//   type="text"
-//   className="form-control"
-//   placeholder="Enter your phone number"
-//   value={shippingInfo.phone}
-//   maxLength={10}
-//   onChange={(e) => {
-//     const value = e.target.value;
-//     // Allow only digits using regex
-//     if (/^\d*$/.test(value) && value.length <= 10) {
-//       setShippingInfo({ ...shippingInfo, phone: value });
-//     }
-//   }}
-// />
-
                   }
                 </div>
 

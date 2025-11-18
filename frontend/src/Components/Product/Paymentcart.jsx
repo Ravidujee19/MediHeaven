@@ -93,7 +93,6 @@ function PaymentCart() {
     
   </div>
 </div>
-
     </div>
     <Footer/>
     </>

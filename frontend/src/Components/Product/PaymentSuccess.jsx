@@ -10,7 +10,6 @@ const PaymentSuccess = () => {
   const [phone, setPhone] = useState('');
 
   useEffect(() => {
-    // ✅ Log and load
     const storedCart = JSON.parse(localStorage.getItem("cart_temp")) || {};
     const shippingAddr = localStorage.getItem("shipping_address");
     const shippingPhone = localStorage.getItem("shipping_phone");
@@ -39,7 +38,6 @@ const PaymentSuccess = () => {
     setSummaryItems(items);
     setTotal(calculatedTotal);
 
-    // ✅ Clean up after reading
     localStorage.removeItem("cart_temp");
     localStorage.removeItem("shipping_address");
     localStorage.removeItem("shipping_phone");
@@ -48,7 +46,7 @@ const PaymentSuccess = () => {
   return (
     <div className="container py-5 text-center">
       <div className="card shadow p-4 mx-auto" style={{ maxWidth: '700px' }}>
-        <h2 className="text-success mb-3">✅ Payment Successful</h2>
+        <h2 className="text-success mb-3">Payment Successful</h2>
         <p className="text-muted mb-4">Your order has been placed successfully!</p>
 
         <div className="text-start mb-4">
