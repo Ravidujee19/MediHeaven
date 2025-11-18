@@ -31,9 +31,6 @@ const LineChartComponent = () => {
         <ReferenceLine y={100} label="Out of Stock" stroke="red" strokeDasharray="3 3" />
       </LineChart>
     </div>
-
-
-
 );
 };
 export default LineChartComponent;

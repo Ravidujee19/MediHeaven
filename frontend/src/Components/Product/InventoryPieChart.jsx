@@ -53,8 +53,6 @@ const InventoryPieChart = () => {
       )}
       <p><strong>Total Items in Stock:</strong> {totalItems}</p>
     </div>
-
-
   );
 };
 export default InventoryPieChart;
