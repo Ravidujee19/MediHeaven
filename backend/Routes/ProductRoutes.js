@@ -15,7 +15,6 @@ const {
 const router = express.Router();
 const upload = multer();
 
-
 router.get("/", getAllInventory);
 router.get("/search", getInventoryByCategory);
 router.post("/", upload.single("image"), addInventory);

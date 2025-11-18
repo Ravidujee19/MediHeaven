@@ -23,7 +23,6 @@ const getInventoryStats = async (req, res) => {
   }
 };
 
-
 //Search
 const getInventoryByCategory = async (req, res) => {
   try {

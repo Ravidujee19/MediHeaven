@@ -1,6 +1,5 @@
 const Inventory = require("../Model/ProductModel");
 
-
 const checkoutCart = async (req, res) => {
   try {
     const { cartItems } = req.body; // { itemId: quantity }

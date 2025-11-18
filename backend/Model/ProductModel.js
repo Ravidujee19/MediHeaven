@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const InventorySchema = new mongoose.Schema({
   name: { type: String, required: true },
   category: { type: String, required: true, enum: ["Medicine", "Equipment", "Consumable", "Protective Gear", "Other"] },
