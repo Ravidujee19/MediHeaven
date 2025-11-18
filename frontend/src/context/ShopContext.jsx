@@ -7,13 +7,13 @@ function ShopContextProvider(props) {
   const currency = 'Rs.';
   const delivery_fee = 0;
 
-  // ✅ Load cart from localStorage if exists
+  // Load cart from localStorage if exists
   const [cartItems, setCartItems] = useState(() => {
     const storedCart = localStorage.getItem("cartItems");
     return storedCart ? JSON.parse(storedCart) : {};
   });
 
-  // ✅ Load products from backend
+  // Load products from backend
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/api/inventory")
@@ -22,7 +22,7 @@ function ShopContextProvider(props) {
       .catch((err) => console.error("Failed to fetch products:", err));
   }, []);
 
-  // ✅ Add item to cart and save to localStorage
+  // Add item to cart and save to localStorage
   const addToCart = (itemId, quantity = 1) => {
     const updatedCart = { ...cartItems };
     updatedCart[itemId] = quantity;
@@ -30,7 +30,7 @@ function ShopContextProvider(props) {
     localStorage.setItem("cartItems", JSON.stringify(updatedCart));
   };
 
-  // ✅ Update or remove item in cart
+  // Update or remove item in cart
   const updateQuantity = (itemId, quantity) => {
     const updatedCart = { ...cartItems };
     if (quantity === 0) {
@@ -42,7 +42,7 @@ function ShopContextProvider(props) {
     localStorage.setItem("cartItems", JSON.stringify(updatedCart));
   };
 
-  // ✅ Calculate total cart value
+  // Calculate total cart value
   const getCartAmount = () => {
     let totalAmount = 0;
     for (const itemId in cartItems) {
@@ -55,7 +55,7 @@ function ShopContextProvider(props) {
     return totalAmount;
   };
 
-  // ✅ Optional: Clear cart after checkout/logout
+  // Optional: Clear cart after checkout/logout
   const clearCart = () => {
     setCartItems({});
     localStorage.removeItem("cartItems");
@@ -65,7 +65,7 @@ function ShopContextProvider(props) {
     console.log("🛒 Cart updated:", cartItems);
   }, [cartItems]);
 
-  // ✅ Add this function before context value
+  // Add this function before context value
 const handleCheckout = async () => {
   try {
     const response = await fetch("http://localhost:5000/api/cart/checkout", {
@@ -97,8 +97,8 @@ const handleCheckout = async () => {
     addToCart,
     updateQuantity,
     getCartAmount,
-    clearCart, // Optional export
-    handleCheckout, // ✅ Add this line
+    clearCart, 
+    handleCheckout, 
   };
 
   return (
