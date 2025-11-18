@@ -114,3 +114,14 @@ npm start
 - Backend API: `http://localhost:5000`
 
 ---
+
+## 👥 Contributors
+
+| Name | GitHub Profile | Contribution |
+|------|----------------|---------------------|
+| **Ravidu** | [github.com/Ravidujee19](https://github.com/Ravidujee19) | Project Setup, Health Monitoring Module, GitHub Repository Maintenance |
+| **Yuhansi** | [github.com/yuhanzee](https://github.com/yuhanzee) | Inventory Management, Supplier Product Module |
+| **Manith** | [github.com/Manith-Edirisinghe](https://github.com/Manith-Edirisinghe) | Finance Management, Reporting & Visualizations |
+| **Shavinda** | [github.com/Shavinda26t](https://github.com/Shavinda26t) | Mental Health Module, Doctor Channeling & Booking System |
+| **Sasindi** | | User Management, Feedback System, Authentication |
+
