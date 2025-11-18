@@ -57,7 +57,6 @@ const CardView = () => {
         {inventory.map(item => (
           <div key={item._id} className="col">
             
-           {/* ✅ WRAPPED the card with <Link> to enable navigation */}
            <Link to={`/product/${item._id}`} className="text-decoration-none text-dark">
 
             <div className="card shadow-sm border-light rounded-3 overflow-hidden transition-transform transform-hover custom-ash-bg" style={{ maxWidth: '300px', cursor: 'pointer' }}>

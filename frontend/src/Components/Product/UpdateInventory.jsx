@@ -230,4 +230,5 @@ const ProductUpdateInventory = () => {
   );
 };
 
+
 export default ProductUpdateInventory;

@@ -132,7 +132,6 @@ const AddInventory = () => {
         
     }
 
-        // Remove category validation from here, handle it separately
         if (name === "category" && !value) {
           newErrors.category = "Please select a category.";
         } else {
@@ -150,7 +149,6 @@ const AddInventory = () => {
       const validateForm = () => {
         let newErrors = {};
 
-        // Additional validation checks for submission if needed
         if (!formData.name) newErrors.name = "Please enter a name.";
         if (!formData.category) newErrors.category = "Please select a category.";
         if (!formData.quantity || formData.quantity <= 0) newErrors.quantity = "Quantity must be greater than 0.";
@@ -179,7 +177,6 @@ const AddInventory = () => {
         
         if (!formData.batchNumber) newErrors.batchNumber = "Please enter a batch number.";
 
-        // ✅ Add this line to validate batchNumber:
       if (!formData.batchNumber || !/^\d{4,10}$/.test(formData.batchNumber)) {
         newErrors.batchNumber = "Batch number must be 4 to 10 digits.";
       }
